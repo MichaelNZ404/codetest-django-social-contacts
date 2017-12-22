@@ -1,0 +1,9 @@
+{% if results %}
+    <ul>
+    {% for result in results %}
+        <li>{{ question.question_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No results found for this query string</p>
+{% endif %}
