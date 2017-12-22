@@ -1,3 +1,7 @@
+<form action="{% url 'index' %}" method="get" accept-charset="utf-8">
+  <input name="search" type="text" placeholder="Search">
+</form>
+
 {% if results %}
     <ul>
     {% for result in results %}
